@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active:
+    - dev
+  thymeleaf:
+    mode: HTML
+  #配置数据源
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.wanna: debug
+  file: log/blog.log

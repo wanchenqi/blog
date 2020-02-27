@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active:
+    - dev
+  thymeleaf:
+    mode: HTML
+  #配置数据源
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT-8
+    username: root
+    password: wcq
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.wanna: debug
+  file: log/blog.log
+
+
